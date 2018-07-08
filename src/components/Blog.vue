@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="title">Articles</h1>
+    <h1 class="title">Blog</h1>
+    <h2 class="subtitle">This section is about my learning process</h2>
     <div class="card">
       <div class="card-header">
         <p class="card-header-title">
