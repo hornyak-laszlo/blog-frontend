@@ -3,9 +3,9 @@
     <header>
       <nav class="navbar is-fixed-top is-light" >
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <router-link to="/" class="navbar-item">
             <img id="logo-img" src="https://www.gravatar.com/avatar/fc0c2e9fb3ae0382d806ffcbfd098156?s=100" width="100" height="100" />
-          </a>
+          </router-link>
           <div class="navbar-item has-text-weight-bold">Welcome to My website, I am Laszlo Hornyak</div>
           <div role="button" class="navbar-burger" @click="toggleMenu" :class="{'is-active': navIsActive}" data-target="mainNav">
             <span aria-hidden="true"></span>
@@ -15,18 +15,18 @@
         </div>
         <div class="navbar-menu" id="mainNav is-dark" :class="{'is-active': navIsActive}">
           <div class="navbar-end">
-            <a class="navbar-item has-text-info is-active">
+            <router-link to="/" class="navbar-item has-text-info">
               Blog
-            </a>
-            <a class="navbar-item has-text-info">
+            </router-link>
+            <router-link to="/projects" class="navbar-item has-text-info">
               Projects
-            </a>
-            <a class="navbar-item has-text-info">
+            </router-link>
+            <router-link to="/about" class="navbar-item has-text-info">
               About Me
-            </a>
-            <a class="navbar-item has-text-info">
+            </router-link>
+            <router-link to="/contact" class="navbar-item has-text-info">
               Contact
-            </a>
+            </router-link>
             <!--span class="navbar-item">
               <a class="button is-danger is-inverted">
                 Admin Page
@@ -74,7 +74,38 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+// Set your colors
+$primary: #209cee;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
 #logo-img {
   max-height:100px;
   border-radius:50%;
@@ -86,5 +117,9 @@ export default {
 #main-section {
   padding-top: 120px;
   padding-bottom: 70px;
+}
+
+.router-link-exact-active {
+  background-color: #e8e8e8;
 }
 </style>
