@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Blog from '@/components/Blog'
+import Articles from '@/components/Articles'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
-import Projects from '@/components/Projects'
+import Courses from '@/components/Courses'
 
 Vue.use(Router)
 
@@ -11,8 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Blog',
-      component: Blog
+      redirect: '/about'
     },
     {
       path: '/about',
@@ -20,14 +19,19 @@ export default new Router({
       component: About
     },
     {
+      path: '/articles',
+      name: 'Articles',
+      component: Articles
+    },
+    {
+      path: '/courses',
+      name: 'Courses',
+      component: Courses
+    },
+    {
       path: '/contact',
       name: 'Contact',
       component: Contact
-    },
-    {
-      path: '/projects',
-      name: 'Projects',
-      component: Projects
     }
   ]
 })

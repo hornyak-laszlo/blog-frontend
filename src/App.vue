@@ -15,14 +15,14 @@
         </div>
         <div class="navbar-menu" id="mainNav is-dark" :class="{'is-active': navIsActive}">
           <div class="navbar-end">
-            <router-link to="/" class="navbar-item has-text-info">
-              Blog
-            </router-link>
-            <router-link to="/projects" class="navbar-item has-text-info">
-              Projects
-            </router-link>
             <router-link to="/about" class="navbar-item has-text-info">
               About Me
+            </router-link>
+            <router-link to="/articles" class="navbar-item has-text-info">
+              Articles
+            </router-link>
+            <router-link to="/courses" class="navbar-item has-text-info">
+              Courses
             </router-link>
             <router-link to="/contact" class="navbar-item has-text-info">
               Contact
@@ -67,7 +67,7 @@ export default {
     }
   },
   methods: {
-    toggleMenu: function () {
+    toggleMenu () {
       this.navIsActive = !this.navIsActive
     }
   }

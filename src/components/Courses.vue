@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1 class="title">Projects</h1>
-    <h2 class="subtitle">Here are my projects</h2>
+    <h1 class="title">Courses</h1>
+    <h2 class="subtitle">I am listing here the courses which I participated in</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Projects',
+  name: 'Courses',
   data () {
     return {
     }
