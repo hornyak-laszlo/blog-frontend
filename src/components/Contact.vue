@@ -47,6 +47,8 @@ export default {
   },
   methods: {
     sendMessage () {
+      // TODO Call the API
+      // https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/send-message
       this.$toast.open({
         message: `Hi ${this.name}, thank you for contacting me!`,
         type: 'is-success',
