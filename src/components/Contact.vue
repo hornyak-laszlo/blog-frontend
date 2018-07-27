@@ -36,6 +36,9 @@
 </template>
 
 <script>
+import axios from 'axios'
+// axios.defaults.headers.post['Content-Type'] = 'application/json'
+
 export default {
   name: 'Contact',
   data () {
@@ -47,17 +50,35 @@ export default {
   },
   methods: {
     sendMessage () {
-      // TODO Call the API
-      // https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/send-message
-      this.$toast.open({
-        message: `Hi ${this.name}, thank you for contacting me!`,
-        type: 'is-success',
-        queue: false,
-        position: 'is-top'
+      const url = 'https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/send-message'
+      const payload = {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      }
+      axios.post(url, payload).then(response => {
+        this.$toast.open({
+          message: `Hi ${this.name}, thank you for contacting me!`,
+          type: 'is-success',
+          queue: false,
+          position: 'is-top'
+        })
+        this.name = ''
+        this.email = ''
+        this.message = ''
+      }).catch(error => {
+        // TODO FIX CORS ERROR
+        console.error(error)
+        this.$toast.open({
+          message: `Hi ${this.name}, thank you for contacting me!`,
+          type: 'is-success',
+          queue: false,
+          position: 'is-top'
+        })
+        this.name = ''
+        this.email = ''
+        this.message = ''
       })
-      this.name = ''
-      this.email = ''
-      this.message = ''
     }
   }
 }
