@@ -2,16 +2,16 @@
   <div>
     <h1 class="title">Courses</h1>
     <h2 class="subtitle">I am listing here the courses which I participated in</h2>
-    <div class="card">
+    <div class="card" v-for="course in courses" :key="course.id">
       <div class="card-content">
         <p class="has-text-centered has-text-weight-bold subtitle">
-          Algorithms, Part I - Princeton University
+          {{course.name}}
         </p>
       </div>
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            Watch it on <a target="_blank" href="https://www.coursera.org/learn/algorithms-part1/home/welcome">Coursera</a>
+            Watch it on <a target="_blank" :href="course.url">{{course.page}}</a>
           </span>
         </p>
       </footer>
@@ -174,6 +174,14 @@ export default {
   name: 'Courses',
   data () {
     return {
+      courses: [
+        {
+          id: 1,
+          name: 'Algorithms, Part I - Princeton University',
+          url: 'https://www.coursera.org/learn/algorithms-part1/home/welcome',
+          page: 'Coursera'
+        }
+      ]
     }
   }
 }
