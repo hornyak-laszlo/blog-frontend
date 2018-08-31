@@ -208,7 +208,7 @@ tracking statistical site.</p>
             </div>
             <div class="level-right">
               <div class="level-item">
-                <span class="is-italic">B2 Level</span>
+                <span class="is-italic">C1 Level</span>
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@ tracking statistical site.</p>
             </div>
             <div class="level-right">
               <div class="level-item">
-                <span class="is-italic">B2 Level</span>
+                <span class="is-italic">C1 Level</span>
               </div>
             </div>
           </div>
