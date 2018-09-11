@@ -49,26 +49,19 @@ export default {
     }
   },
   methods: {
-    sendMessage () {
-      const url = 'https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/send-message'
-      const payload = {
-        name: this.name,
-        email: this.email,
-        message: this.message
-      }
-      axios.post(url, payload).then(response => {
-        this.$toast.open({
-          message: `Hi ${this.name}, thank you for contacting me!`,
-          type: 'is-success',
-          queue: false,
-          position: 'is-top'
-        })
-        this.name = ''
-        this.email = ''
-        this.message = ''
-      }).catch(error => {
+    async sendMessage () {
+      try {
+        const url = 'https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/send-message'
+        const payload = {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+        await axios.post(url, payload)
+      } catch (error) {
         // TODO FIX CORS ERROR
         console.error(error)
+      } finally {
         this.$toast.open({
           message: `Hi ${this.name}, thank you for contacting me!`,
           type: 'is-success',
@@ -78,7 +71,7 @@ export default {
         this.name = ''
         this.email = ''
         this.message = ''
-      })
+      }
     }
   }
 }
