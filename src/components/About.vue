@@ -123,7 +123,7 @@ then implemented an online image uploader application.</p>
               </div>
             </div>
           </div>
-          <p>Service Development and Management Department - Service-Oriented Architectures Specialization</p>
+          <p>Service Development and Management Department - Service-Oriented Architectures Specialization</p><hr>
           <p class="has-text-weight-bold">Electrical Engineering BSc.</p>
           <div class="level">
             <div class="level-left">
@@ -137,7 +137,7 @@ then implemented an online image uploader application.</p>
               </div>
             </div>
           </div>
-          <p>Embedded Systems Department - Control Systems Specialization</p><hr>
+          <p>Embedded Systems Department - Control Systems Specialization</p>
         </div>
       </div>
     </b-collapse>
@@ -175,8 +175,8 @@ then implemented an online image uploader application.</p>
             <li><i>Backend:</i> Remote REST API</li>
             <li><i>Frontend:</i> AngularJS 1.5 (component based, ES6) - Bootstrap 3</li>
             <li>
-              This was an only frontend project. We got the data from a REST API provided by another
-              company. We used the newest stable AngularJS 1.5 with the new ES6 syntax. We used
+              This was an exclusively frontend project. We got the data from a REST API provided by another
+              company. We used the (at this time) newest stable AngularJS 1.5 with the new ES6 syntax. We used
               component based architecture, with that the maintainability of our codebase dramatically
               increased. For the building process we used Webpack.
             </li>
@@ -218,8 +218,7 @@ then implemented an online image uploader application.</p>
           <div class="level">
             <div class="level-left">
               <div class="level-item">
-                <span class="is-italic">English</span>&nbsp;
-                <span> - English intermediate level exam (2011)</span>
+                <span class="is-italic">English</span>
               </div>
             </div>
             <div class="level-right">
@@ -240,13 +239,15 @@ then implemented an online image uploader application.</p>
               </div>
             </div>
           </div>
+          <p class="has-text-weight-bold">Driving License</p>
+          <p>Class B</p>
           <p class="has-text-weight-bold">Programming languages and frameworks</p>
           <p class="is-italic">Prior experience</p>
           <p>Android, C, C++, Java EE, Matlab, Python, R, Scala</p>
           <p class="is-italic">Proficient</p>
-          <p>CodeIgniter, Java, Laravel, React, Vue</p>
+          <p>CodeIgniter, Java, Laravel, React</p>
           <p class="is-italic">Expert</p>
-          <p>Angular, Bootstrap, CSS, ExpressJS, HTML, JavaScript, MongoDB, MySQL, PHP</p>
+          <p>Angular, Bootstrap, CSS, ExpressJS, Google Cloud Platform, HTML, JavaScript, MongoDB, MySQL, PHP, Vue.js, Vuetify</p>
           <p class="has-text-weight-bold">Soft skills and qualities</p>
           <p>Good problem solving, quick of understanding, creative thinking.</p>
           <p>Openness and desire to learn and develop.</p>

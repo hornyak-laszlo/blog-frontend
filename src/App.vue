@@ -46,7 +46,7 @@
     <footer>
         <nav class="navbar is-fixed-bottom is-light">
         <div class="container has-text-centered" id="footer">
-          <span class="is-capitalized" >© All rights reserved, Laszlo Hornyak 2018</span>
+          <span class="is-capitalized" >© All rights reserved, Laszlo Hornyak {{new Date().getFullYear()}}</span>
         </div>
       </nav>
     </footer>
