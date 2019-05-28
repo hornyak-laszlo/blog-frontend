@@ -7,6 +7,6 @@ deploy:
   provider: s3
   access_key_id: AWS_ACCESS_KEY_ID
   secret_access_key: AWS_SECRET_ACCESS_KEY
-  bucket: "laszlo-hornyak.com"
+  bucket: "arn:aws:s3:::laszlo-hornyak.com"
   skip_cleanup: true
   local_dir: dist
