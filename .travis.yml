@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 8
+script:
+  - npm run build
+deploy:
+  provider: s3
+  access_key_id: "AKIAJ3UCDXAKWQKXWPNA"
+  secret_access_key: "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"
+  bucket: "laszlo-hornyak.com"
+  skip_cleanup: true
+  local_dir: dist
