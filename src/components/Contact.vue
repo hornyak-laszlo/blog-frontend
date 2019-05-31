@@ -58,10 +58,6 @@ export default {
           message: this.message
         }
         await axios.post(url, payload)
-      } catch (error) {
-        // TODO FIX CORS ERROR
-        console.error(error)
-      } finally {
         this.$toast.open({
           message: `Hi ${this.name}, thank you for contacting me!`,
           type: 'is-success',
@@ -71,6 +67,13 @@ export default {
         this.name = ''
         this.email = ''
         this.message = ''
+      } catch (error) {
+        this.$toast.open({
+          message: 'Email was not sent!',
+          type: 'is-danger',
+          queue: false,
+          position: 'is-top'
+        })
       }
     }
   }

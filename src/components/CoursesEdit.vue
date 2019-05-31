@@ -87,11 +87,9 @@ export default {
           const url = 'https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/courses'
           await axios.post(url, payload)
         }
-      } catch (error) {
-        // TODO FIX CORS ERROR
-        console.error(error)
-      } finally {
         this.$router.replace('/courses')
+      } catch (error) {
+        console.error(error)
       }
     }
   }
