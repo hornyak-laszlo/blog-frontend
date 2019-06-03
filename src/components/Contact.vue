@@ -36,8 +36,7 @@
 </template>
 
 <script>
-import axios from 'axios'
-// axios.defaults.headers.post['Content-Type'] = 'application/json'
+import { sendEmail } from '../api/email'
 
 export default {
   name: 'Contact',
@@ -50,14 +49,8 @@ export default {
   },
   methods: {
     async sendMessage () {
-      try {
-        const url = 'https://0elxks30bg.execute-api.eu-central-1.amazonaws.com/dev/send-message'
-        const payload = {
-          name: this.name,
-          email: this.email,
-          message: this.message
-        }
-        await axios.post(url, payload)
+      const emailRes = await sendEmail(this.name, this.email, this.message)
+      if (emailRes.success) {
         this.$toast.open({
           message: `Hi ${this.name}, thank you for contacting me!`,
           type: 'is-success',
@@ -67,7 +60,7 @@ export default {
         this.name = ''
         this.email = ''
         this.message = ''
-      } catch (error) {
+      } else {
         this.$toast.open({
           message: 'Email was not sent!',
           type: 'is-danger',
