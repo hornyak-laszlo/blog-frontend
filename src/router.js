@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Articles from '@/components/Articles'
-import About from '@/components/About'
-import Contact from '@/components/Contact'
-import Courses from '@/components/Courses'
-import CoursesEdit from '@/components/CoursesEdit'
+import Articles from './pages/Articles'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Courses from './pages/Courses'
+import CoursesEdit from './pages/CoursesEdit'
 
 Vue.use(Router)
 

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Course from './Course'
+import Course from '../components/Course'
 import { getCourses } from '../api/courses'
 
 export default {
