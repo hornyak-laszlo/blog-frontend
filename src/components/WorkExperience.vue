@@ -23,9 +23,9 @@
             </div>
           </div>
         </div>
-        <p>During this job I learnt a lot about chatbots and Google Cloud Platform. I worked in more teams of 2-5 people.
-For development we use NodeJs, Vue.js, MongoDB, Google Cloud Platform and external REST API services.
-Some of my biggest projects were an Agent System (Bosch) and more Dialogflow based chatbots.</p><hr>
+        <p>During this job I learn a lot about chatbots and Google Cloud Platform. I work in more teams of 2-5 people.
+For development I use NodeJS, Vue.js, MongoDB, Google Cloud Platform and external REST API services.
+Some of my biggest projects are an Agent System (Bosch) and more Dialogflow based chatbots.</p><hr>
         <p class="has-text-weight-bold">Full Stack Software Engineer</p>
         <div class="level">
           <div class="level-left">
@@ -40,7 +40,7 @@ Some of my biggest projects were an Agent System (Bosch) and more Dialogflow bas
           </div>
         </div>
         <p>During this job I improved my website development skills. I worked usually in a team of 2-3 people.
-For development we used NodeJs, Angular stack with MongoDB and/or external REST API service.
+For development I used NodeJS, Angular stack with MongoDB and/or external REST API service.
 Our project management toolset was from Atlassian (Jira, Confluence, Bitbucket). Some of my
 biggest projects were a working clothes administration site (DBL), a weather statistics analyzer site and a car
 tracking statistical site (BMW).</p><hr>
@@ -58,7 +58,7 @@ tracking statistical site (BMW).</p><hr>
           </div>
         </div>
         <p>During this job I learnt a lot about website development, databases and I got to know several
-frameworks and libraries. Our stack contained PHP, NodeJs, AngularJS with MySQL and MongoDB.
+frameworks and libraries. Our stack contained PHP, NodeJS, AngularJS with MySQL and MongoDB.
 I worked on many projects in team and alone too, as well in agile development environment. I learnt
 the administration of Linux based operating systems and the Git version control system. Some of my
 biggest projects were a social media site, a vehicle tracking site, a B2B site (Mercedes-Benz) and an education site.</p><hr>

@@ -51,11 +51,11 @@
           <p>Class B</p>
           <p class="has-text-weight-bold">Programming languages and frameworks</p>
           <p class="is-italic">Prior experience</p>
-          <p>Android, C, C++, Java EE, Matlab, Python, R, Scala</p>
+          <p>Amazon Web Services, Android, C, C++, Java EE, Matlab, Python, R, Scala</p>
           <p class="is-italic">Proficient</p>
-          <p>CodeIgniter, Java, Laravel, React</p>
+          <p>CodeIgniter, Java, Laravel, ReactJS</p>
           <p class="is-italic">Expert</p>
-          <p>Angular, Bootstrap, CSS, ExpressJS, Google Cloud Platform, HTML, JavaScript, MongoDB, MySQL, PHP, Vue.js, Vuetify</p>
+          <p>Angular, Bootstrap, CSS, ExpressJS, Google Cloud Platform, HTML, JavaScript, MongoDB, MySQL, NodeJS, PHP, Vue.js, Vuetify</p>
           <p class="has-text-weight-bold">Soft skills and qualities</p>
           <p>Good problem solving, quick of understanding, creative thinking.</p>
           <p>Openness and desire to learn and develop.</p>
