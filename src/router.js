@@ -4,12 +4,23 @@ import Articles from './pages/Articles'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Courses from './pages/Courses'
-import CoursesEdit from './pages/CoursesEdit'
+import NotFound from './pages/NotFound'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '*',
+      redirect: {
+        path: '/404'
+      }
+    },
+    {
+      path: '/404',
+      name: 'NotFound',
+      component: NotFound
+    },
     {
       path: '/',
       redirect: '/about'
@@ -28,16 +39,6 @@ export default new Router({
       path: '/courses',
       name: 'Courses',
       component: Courses
-    },
-    {
-      path: '/courses-add',
-      name: 'CoursesAdd',
-      component: CoursesEdit
-    },
-    {
-      path: '/courses-edit/:id',
-      name: 'CoursesEdit',
-      component: CoursesEdit
     },
     {
       path: '/contact',
