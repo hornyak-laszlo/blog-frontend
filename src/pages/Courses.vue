@@ -15,6 +15,15 @@ import { getCourses } from '../api/courses'
 
 export default {
   name: 'Courses',
+  metaInfo () {
+    return {
+      title: 'Courses - Laszlo Hornyak',
+      meta: [{
+        name: 'description',
+        content: 'Courses done by Laszlo Hornyak'
+      }]
+    }
+  },
   components: {
     Course
   },

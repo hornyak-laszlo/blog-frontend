@@ -25,6 +25,15 @@ import { getArticles } from '../api/articles'
 
 export default {
   name: 'Articles',
+  metaInfo () {
+    return {
+      title: 'Articles - Laszlo Hornyak',
+      meta: [{
+        name: 'description',
+        content: 'Favourite articles of Laszlo Hornyak'
+      }]
+    }
+  },
   data () {
     return {
       title: 'Articles',

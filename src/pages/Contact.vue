@@ -40,6 +40,15 @@ import { sendEmail } from '../api/email'
 
 export default {
   name: 'Contact',
+  metaInfo () {
+    return {
+      title: 'Contact - Laszlo Hornyak',
+      meta: [{
+        name: 'description',
+        content: 'Contact Laszlo Hornyak'
+      }]
+    }
+  },
   data () {
     return {
       name: '',

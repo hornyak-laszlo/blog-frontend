@@ -6,7 +6,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'NotFound',
+  metaInfo () {
+    return {
+      title: 'Page Not Found - Laszlo Hornyak',
+      meta: [{
+        name: 'description',
+        content: 'Page Not Found on laszlo-hornyak.com'
+      }]
+    }
+  }
+}
 </script>
 <style scoped lang="css">
   h1 {

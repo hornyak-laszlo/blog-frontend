@@ -20,15 +20,20 @@ import Skills from '../components/Skills'
 
 export default {
   name: 'About',
+  metaInfo () {
+    return {
+      title: 'About - Laszlo Hornyak',
+      meta: [{
+        name: 'description',
+        content: 'About Laszlo Hornyak'
+      }]
+    }
+  },
   components: {
     WorkExperience,
     Education,
     MainProjects,
     Skills
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
