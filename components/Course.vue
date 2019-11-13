@@ -8,7 +8,7 @@
     <footer class="card-footer">
       <p class="card-footer-item">
         <span>
-          Watch it on <a target="_blank" :href="url" >{{page}}</a>
+          Watch it on <a class="has-text-info" target="_blank" :href="url" >{{page}}</a>
         </span>
       </p>
     </footer>

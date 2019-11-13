@@ -11,7 +11,7 @@
         <div class="box">
           <ul>
             <li v-for="article in articleByCategory.list" :key="article.id">
-              <a target="_blank" :href="article.url">{{article.title}}</a>
+              <a class="has-text-info" target="_blank" :href="article.url">{{article.title}}</a>
             </li>
           </ul>
         </div>
