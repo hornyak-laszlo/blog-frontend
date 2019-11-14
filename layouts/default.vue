@@ -1,19 +1,21 @@
 <template>
   <div>
     <header>
-      <nav class="navbar is-fixed-top is-light" >
+      <nav class="navbar is-fixed-top is-light">
         <div class="navbar-brand">
           <nuxt-link to="/" class="navbar-item">
-            <img id="logo-img" src="https://www.gravatar.com/avatar/fc0c2e9fb3ae0382d806ffcbfd098156?s=100" width="100" height="100" />
+            <img id="logo-img" src="https://www.gravatar.com/avatar/fc0c2e9fb3ae0382d806ffcbfd098156?s=100" width="100" height="100">
           </nuxt-link>
-          <div class="navbar-item has-text-weight-bold">Welcome to My website, I am Laszlo Hornyak</div>
-          <div role="button" class="navbar-burger" @click="toggleMenu" :class="{'is-active': navIsActive}" data-target="mainNav">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+          <div class="navbar-item has-text-weight-bold">
+            Welcome to My website, I am Laszlo Hornyak
+          </div>
+          <div @click="toggleMenu" :class="{'is-active': navIsActive}" role="button" class="navbar-burger" data-target="mainNav">
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
           </div>
         </div>
-        <div class="navbar-menu" :class="{'is-active': navIsActive}">
+        <div :class="{'is-active': navIsActive}" class="navbar-menu">
           <div class="navbar-end">
             <nuxt-link to="/" class="navbar-item has-text-info">
               About Me
@@ -32,16 +34,18 @@
       </nav>
     </header>
 
-    <section class="section" id="main-section">
+    <section id="main-section" class="section">
       <div class="container is-fluid">
-        <nuxt/>
+        <nuxt />
       </div>
     </section>
 
     <footer>
-        <nav class="navbar is-fixed-bottom is-light">
-        <div class="container has-text-centered" id="footer">
-          <span class="is-capitalized" >© All rights reserved, Laszlo Hornyak {{new Date().getFullYear()}}</span>
+      <nav class="navbar is-fixed-bottom is-light">
+        <div id="footer" class="container has-text-centered">
+          <span class="is-capitalized">
+            © All rights reserved, Laszlo Hornyak {{ new Date().getFullYear() }}
+          </span>
         </div>
       </nav>
     </footer>

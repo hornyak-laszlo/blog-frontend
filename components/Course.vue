@@ -2,13 +2,13 @@
   <div class="card">
     <div class="card-content">
       <p class="has-text-centered has-text-weight-bold subtitle">
-        {{name}}
+        {{ name }}
       </p>
     </div>
     <footer class="card-footer">
       <p class="card-footer-item">
         <span>
-          Watch it on <a class="has-text-info" target="_blank" :href="url" >{{page}}</a>
+          Watch it on <a :href="url" class="has-text-info" target="_blank">{{ page }}</a>
         </span>
       </p>
     </footer>
@@ -19,9 +19,18 @@
 export default {
   name: 'Course',
   props: {
-    name: String,
-    url: String,
-    page: String
+    name: {
+      type: String,
+      default: ''
+    },
+    url: {
+      type: String,
+      default: ''
+    },
+    page: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
