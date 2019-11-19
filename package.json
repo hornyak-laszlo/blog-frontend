@@ -1,34 +1,38 @@
 {
   "name": "blog-frontend",
-  "version": "1.0.0",
-  "description": "laszlo-hornyak.com",
-  "author": "Laszlo Hornyak <hornyak.laszlo88@gmail.com>",
+  "version": "2.0.0",
+  "description": "My personal website laszlo-hornyak.com",
+  "author": "Laszlo Hornyak",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-staging": "vue-cli-service build --mode staging",
-    "lint": "vue-cli-service lint"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
-    "axios": "0.19.0",
-    "buefy": "0.7.10",
-    "prerender-spa-plugin": "3.4.0",
-    "vue": "2.6.10",
-    "vue-meta": "2.0.4",
-    "vue-router": "3.0.7"
+    "@nuxtjs/axios": "^5.3.6",
+    "node-sass": "^4.13.0",
+    "nuxt": "^2.0.0",
+    "nuxt-buefy": "^0.3.2",
+    "sass-loader": "^8.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.9.2",
-    "@vue/cli-plugin-eslint": "3.9.2",
-    "@vue/cli-service": "3.9.2",
-    "@vue/eslint-config-standard": "4.0.0",
-    "babel-eslint": "10.0.2",
-    "eslint": "6.0.1",
-    "eslint-plugin-node": "9.1.0",
-    "eslint-plugin-vue": "5.2.3",
-    "node-sass": "4.12.0",
-    "sass-loader": "7.1.0",
-    "vue-template-compiler": "2.6.10"
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "husky": "^2.6.0",
+    "lint-staged": "^8.2.1"
   }
 }

@@ -1,17 +1,21 @@
 <template>
   <div>
-    <h1 class="title">Articles</h1>
-    <h2 class="subtitle">I am listing here the articles which I found really useful</h2>
+    <h1 class="title">
+      Articles
+    </h1>
+    <h2 class="subtitle">
+      I am listing here the articles which I found really useful
+    </h2>
     <b-tabs type="is-toggle is-fullwidth">
       <b-tab-item v-for="articleByCategory in articles" :key="articleByCategory.id">
         <template slot="header">
-          <b-icon :icon="articleByCategory.icon"></b-icon>
-          <span> {{articleByCategory.name}} <b-tag rounded> {{articleByCategory.list.length}} </b-tag> </span>
+          <b-icon :icon="articleByCategory.icon" />
+          <span> {{ articleByCategory.name }} <b-tag rounded> {{ articleByCategory.list.length }} </b-tag> </span>
         </template>
         <div class="box">
           <ul>
             <li v-for="article in articleByCategory.list" :key="article.id">
-              <a target="_blank" :href="article.url">{{article.title}}</a>
+              <a :href="article.url" target="_blank">{{ article.title }}</a>
             </li>
           </ul>
         </div>
@@ -25,10 +29,11 @@ import { getArticles } from '../api/articles'
 
 export default {
   name: 'Articles',
-  metaInfo () {
+  head () {
     return {
       title: 'Articles - Laszlo Hornyak',
       meta: [{
+        hid: 'description',
         name: 'description',
         content: 'Favourite articles of Laszlo Hornyak'
       }]

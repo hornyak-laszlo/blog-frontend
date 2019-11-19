@@ -1,22 +1,20 @@
 # blog-frontend
 
-> A Vue.js project
+> My personal website laszlo-hornyak.com
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+$ npm run install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# build for production with minification
-npm run build
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-# build for staging
-npm run build-staging
-
-# run lint check
-npm run lint
+# generate static project
+$ npm run generate
 ```

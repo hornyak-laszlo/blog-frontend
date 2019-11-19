@@ -1,14 +1,18 @@
 <template>
   <div>
-    <h1 class="title">About me</h1>
-    <h2 class="subtitle">Some information about me</h2>
-    <work-experience></work-experience>
+    <h1 class="title">
+      About me
+    </h1>
+    <h2 class="subtitle">
+      Some information about me
+    </h2>
+    <work-experience />
     <br>
-    <education></education>
+    <education />
     <br>
-    <main-projects></main-projects>
+    <main-projects />
     <br>
-    <skills></skills>
+    <skills />
   </div>
 </template>
 
@@ -20,10 +24,11 @@ import Skills from '../components/Skills'
 
 export default {
   name: 'About',
-  metaInfo () {
+  head () {
     return {
       title: 'About - Laszlo Hornyak',
       meta: [{
+        hid: 'description',
         name: 'description',
         content: 'About Laszlo Hornyak'
       }]
