@@ -29,10 +29,11 @@ import { getArticles } from '../api/articles'
 
 export default {
   name: 'Articles',
-  metaInfo () {
+  head () {
     return {
       title: 'Articles - Laszlo Hornyak',
       meta: [{
+        hid: 'description',
         name: 'description',
         content: 'Favourite articles of Laszlo Hornyak'
       }]

@@ -33,10 +33,11 @@ import { sendEmail } from '../api/email'
 
 export default {
   name: 'Contact',
-  metaInfo () {
+  head () {
     return {
       title: 'Contact - Laszlo Hornyak',
       meta: [{
+        hid: 'description',
         name: 'description',
         content: 'Contact Laszlo Hornyak'
       }]

@@ -19,10 +19,11 @@ import { getCourses } from '../api/courses'
 
 export default {
   name: 'Courses',
-  metaInfo () {
+  head () {
     return {
       title: 'Courses - Laszlo Hornyak',
       meta: [{
+        hid: 'description',
         name: 'description',
         content: 'Courses done by Laszlo Hornyak'
       }]

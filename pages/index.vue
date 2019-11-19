@@ -24,10 +24,11 @@ import Skills from '../components/Skills'
 
 export default {
   name: 'About',
-  metaInfo () {
+  head () {
     return {
       title: 'About - Laszlo Hornyak',
       meta: [{
+        hid: 'description',
         name: 'description',
         content: 'About Laszlo Hornyak'
       }]
