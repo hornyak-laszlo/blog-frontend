@@ -9,7 +9,7 @@
           <div class="navbar-item has-text-weight-bold">
             Welcome to My website, I am Laszlo Hornyak
           </div>
-          <div @click="toggleMenu" :class="{'is-active': navIsActive}" role="button" class="navbar-burger" data-target="mainNav">
+          <div :class="{'is-active': navIsActive}" role="button" class="navbar-burger" data-target="mainNav" @click="toggleMenu">
             <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />

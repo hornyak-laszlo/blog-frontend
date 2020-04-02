@@ -19,16 +19,6 @@ import { getCourses } from '../api/courses'
 
 export default {
   name: 'Courses',
-  head () {
-    return {
-      title: 'Courses - Laszlo Hornyak',
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: 'Courses done by Laszlo Hornyak'
-      }]
-    }
-  },
   components: {
     Course
   },
@@ -44,6 +34,16 @@ export default {
       // notify coursesRes.message
     } else {
       this.courses = coursesRes.data
+    }
+  },
+  head () {
+    return {
+      title: 'Courses - Laszlo Hornyak',
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: 'Courses done by Laszlo Hornyak'
+      }]
     }
   }
 }

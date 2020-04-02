@@ -29,16 +29,6 @@ import { getArticles } from '../api/articles'
 
 export default {
   name: 'Articles',
-  head () {
-    return {
-      title: 'Articles - Laszlo Hornyak',
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: 'Favourite articles of Laszlo Hornyak'
-      }]
-    }
-  },
   data () {
     return {
       title: 'Articles',
@@ -52,6 +42,16 @@ export default {
       // notify articlesRes.message
     } else {
       this.articles = articlesRes.data
+    }
+  },
+  head () {
+    return {
+      title: 'Articles - Laszlo Hornyak',
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: 'Favourite articles of Laszlo Hornyak'
+      }]
     }
   }
 }

@@ -33,16 +33,6 @@ import { sendEmail } from '../api/email'
 
 export default {
   name: 'Contact',
-  head () {
-    return {
-      title: 'Contact - Laszlo Hornyak',
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: 'Contact Laszlo Hornyak'
-      }]
-    }
-  },
   data () {
     return {
       name: '',
@@ -71,6 +61,16 @@ export default {
           position: 'is-top'
         })
       }
+    }
+  },
+  head () {
+    return {
+      title: 'Contact - Laszlo Hornyak',
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: 'Contact Laszlo Hornyak'
+      }]
     }
   }
 }

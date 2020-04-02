@@ -24,6 +24,12 @@ import Skills from '../components/Skills'
 
 export default {
   name: 'About',
+  components: {
+    WorkExperience,
+    Education,
+    MainProjects,
+    Skills
+  },
   head () {
     return {
       title: 'About - Laszlo Hornyak',
@@ -33,12 +39,6 @@ export default {
         content: 'About Laszlo Hornyak'
       }]
     }
-  },
-  components: {
-    WorkExperience,
-    Education,
-    MainProjects,
-    Skills
   }
 }
 </script>
