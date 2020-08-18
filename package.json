@@ -23,7 +23,7 @@
     "@nuxtjs/axios": "5.9.7",
     "node-sass": "4.13.1",
     "nuxt": "2.12.2",
-    "nuxt-buefy": "0.3.26",
+    "nuxt-buefy": "0.4.0",
     "sass-loader": "8.0.2"
   },
   "devDependencies": {
