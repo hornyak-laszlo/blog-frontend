@@ -15,25 +15,16 @@
 
 <script>
 import Course from '../components/Course'
-import { getCourses } from '../api/courses'
+import { courses } from '../api/courses'
 
 export default {
-  name: 'Courses',
+  name: 'CoursePage',
   components: {
     Course
   },
   data () {
     return {
       courses: []
-    }
-  },
-  async mounted () {
-    const coursesRes = await getCourses()
-    if (!coursesRes.success) {
-      this.courses = []
-      // notify coursesRes.message
-    } else {
-      this.courses = coursesRes.data
     }
   },
   head () {
@@ -45,6 +36,9 @@ export default {
         content: 'Courses done by Laszlo Hornyak'
       }]
     }
+  },
+  mounted () {
+    this.courses = courses
   }
 }
 </script>

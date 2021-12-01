@@ -23,7 +23,7 @@ import MainProjects from '../components/MainProjects'
 import Skills from '../components/Skills'
 
 export default {
-  name: 'About',
+  name: 'AboutPage',
   components: {
     WorkExperience,
     Education,

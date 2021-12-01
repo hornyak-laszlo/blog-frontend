@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: 'Education',
+  name: 'EducationItem',
   data () {
     return {
     }

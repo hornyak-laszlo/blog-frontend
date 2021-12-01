@@ -32,12 +32,22 @@
 import { sendEmail } from '../api/email'
 
 export default {
-  name: 'Contact',
+  name: 'ContactPage',
   data () {
     return {
       name: '',
       email: '',
       message: ''
+    }
+  },
+  head () {
+    return {
+      title: 'Contact - Laszlo Hornyak',
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: 'Contact Laszlo Hornyak'
+      }]
     }
   },
   methods: {
@@ -61,16 +71,6 @@ export default {
           position: 'is-top'
         })
       }
-    }
-  },
-  head () {
-    return {
-      title: 'Contact - Laszlo Hornyak',
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: 'Contact Laszlo Hornyak'
-      }]
     }
   }
 }

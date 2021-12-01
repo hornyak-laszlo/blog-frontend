@@ -104,7 +104,7 @@
 
 <script>
 export default {
-  name: 'Skills',
+  name: 'SkillItem',
   data () {
     return {
     }

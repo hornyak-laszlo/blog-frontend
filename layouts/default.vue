@@ -20,9 +20,6 @@
             <nuxt-link to="/" class="navbar-item has-text-info">
               About Me
             </nuxt-link>
-            <nuxt-link to="/articles" class="navbar-item has-text-info">
-              Articles
-            </nuxt-link>
             <nuxt-link to="/courses" class="navbar-item has-text-info">
               Courses
             </nuxt-link>
